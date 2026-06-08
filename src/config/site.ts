@@ -5,7 +5,6 @@ export type HomeItem = {
   external?: boolean;
   prefix?: string;
 };
-
 export type HomeSection = {
   title: string;
   items?: HomeItem[];
@@ -16,38 +15,36 @@ export type HomeSection = {
     showEmpty?: boolean;
   };
 };
-
 export type SiteConfig = {
   name: string;
   description: string;
   homeAsciiArt: string;
   homeSections: HomeSection[];
 };
-
 export const siteConfig: SiteConfig = {
-  name: "Entropic",
-  description: "Security Research Philes",
-  homeAsciiArt: `▓█████  ███▄    █ ▄▄▄█████▓ ██▀███   ▒█████   ██▓███   ██▓ ▄████▄
-▓█   ▀  ██ ▀█   █ ▓  ██▒ ▓▒▓██ ▒ ██▒▒██▒  ██▒▓██░  ██▒▓██▒▒██▀ ▀█
-▒███   ▓██  ▀█ ██▒▒ ▓██░ ▒░▓██ ░▄█ ▒▒██░  ██▒▓██░ ██▓▒▒██▒▒▓█    ▄
-▒▓█  ▄ ▓██▒  ▐▌██▒░ ▓██▓ ░ ▒██▀▀█▄  ▒██   ██░▒██▄█▓▒ ▒░██░▒▓▓▄ ▄██▒
-░▒████▒▒██░   ▓██░  ▒██▒ ░ ░██▓ ▒██▒░ ████▓▒░▒██▒ ░  ░░██░▒ ▓███▀ ░
-░░ ▒░ ░░ ▒░   ▒ ▒   ▒ ░░   ░ ▒▓ ░▒▓░░ ▒░▒░▒░ ▒▓▒░ ░  ░░▓  ░ ░▒ ▒  ░
- ░ ░  ░░ ░░   ░ ▒░    ░      ░▒ ░ ▒░  ░ ▒ ▒░ ░▒ ░      ▒ ░  ░  ▒
-   ░      ░   ░ ░   ░        ░░   ░ ░ ░ ░ ▒  ░░        ▒ ░░
-   ░  ░         ░             ░         ░ ░            ░  ░ ░
-                                                        ░`,
+  name: "divdot",
+  description: "Biotechnology Research Philes",
+  homeAsciiArt: `▓█████▄  ██▓ ██▒   █▓▓█████▄  ▒█████  ▄▄▄█████▓
+▒██▀ ██▌▓██▒▓██░   █▒▒██▀ ██▌▒██▒  ██▒▓  ██▒ ▓▒
+░██   █▌▒██▒ ▓██  █▒░░██   █▌▒██░  ██▒▒ ▓██░ ▒░
+░▓█▄   ▌░██░  ▒██ █░░░▓█▄   ▌▒██   ██░░ ▓██▓ ░
+░▒████▓ ░██░   ▒▀█░  ░▒████▓ ░ ████▓▒░  ▒██▒ ░
+ ▒▒▓  ▒ ░▓     ░ ▐░   ▒▒▓  ▒ ░ ▒░▒░▒░   ▒ ░░
+ ░ ▒  ▒  ▒ ░   ░ ░░   ░ ▒  ▒   ░ ▒ ▒░     ░
+ ░ ░  ░  ▒ ░     ░░   ░ ░  ░ ░ ░ ░ ▒    ░
+   ░     ░        ░     ░         ░ ░
+ ░               ░    ░`,
   homeSections: [
     {
-      title: "TL;DR",
+      title: "Hi, I'm divdot!",
       items: [
         {
-          label: "Cybersecurity enthusiast. Idealist. Purist."
+          label: "Biotechnology enthusiast. Russian Red Cross volunteer."
         },
         {
-          label: "Researcher @RaptX",
-          linkLabel: "@RaptX",
-          href: "https://raptx.org/",
+          label: "Researcher @cspfmba",
+          linkLabel: "@cspfmba",
+          href: "https://www.cspfmba.ru/",
           external: true
         }
       ]
@@ -62,39 +59,23 @@ export const siteConfig: SiteConfig = {
     {
       title: "Research",
       items: [
-        { label: "Binary Exploitation" },
-        { label: "Windows Security" },
-        { label: "IoT Security" },
-        { label: "Automation" }
+        { label: "Vascular growth stimulation" },
+        { label: "Calcium, Iron and Silicon nanomaterials" },
+        { label: "Au@Fe corsatellites" },
+        { label: "Laser ablation in liquids" }
       ]
     },
     {
       title: "Contact",
       items: [
-        { label: "root -at- cubeyond -dot- net" },
+        { label: "anikeew.sk@divdot.ru" },
         {
-          label: "PGP Encryption Key",
-          href: "/key.asc"
-        },
-        {
-          label: "github@plt",
-          href: "https://github.com/CuB3y0nd/",
-          external: true,
-          prefix: "~ call"
-        },
-        {
-          label: "memos@plt",
-          href: "https://memos.cubeyond.net/",
-          external: true,
-          prefix: "~ call"
-        },
-        {
-          label: "kofi@plt",
-          href: "https://ko-fi.com/cub3y0nd",
-          external: true,
-          prefix: "~ call"
+          label: "tg @divdot",
+          href: "https://t.me/divdot",
+          external: true
         }
       ]
     }
   ]
 };
+ 
